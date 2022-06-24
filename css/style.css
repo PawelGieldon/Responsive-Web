@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif; 
+    
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: white;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    
+}
+
+.upper-text {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#FF6347;
+    letter-spacing: 1px;
+    order: -1;
+    
+}
+
+.first-column {
+    background-image: url(../scr1.png);
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    background-position: center;    
+    border: 3px solid black;    
+    width: 55%;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 .5em 2em;
+    display: flex;
+    
+}
+
+
+
+.second-column {
+   
+   width: 45%;
+   margin-left: 2em;
+   margin-right: 2em;
+   display: flex;
+}
+
+.col, .col2 {
+    text-align: center;
+    
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.Join {
+    color: white;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    margin-bottom: auto;
+    margin-top: 0;
+    
+    
+}
+
+.clause {
+    font-size: 0.65rem;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.Register {
+    color: #8B008B;
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 0.2em;
+    margin-bottom: 1.9em;
+    
+}
+
+
+
+.btn-register {
+    margin-top: 1rem;
+    background-color: #7FFFD4;
+    color: black;
+    padding: 0.4rem 4.4rem;
+    border-radius: 10px;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 150ms;
+}
+
+.btn-register:hover {
+    transform: scale(1.1);
+}
+
+.input-first {
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.input-second {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.col > *,
+.col2 > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 500px) {
+    body {
+        
+        flex-direction: column;
+    }
+    
+    .first-column {
+        width: 100%;
+        margin: 0;    
+        min-height: 60vh;
+        border: 5px solid red;
+        
+    }
+    
+    .second-column {
+        width: 100%;
+        margin: 0;
+        border: 2px solid black;
+        
+       
+    }
+    
+    .col2 {
+        width: 80%;
+        
+        margin: 0 auto;
+        
+    }
+}
